@@ -4,55 +4,53 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.student.R;
 
-import java.util.List;
+public class Adapter extends BaseAdapter {
 
-public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
-
-    List<String> titles;
-    List<Integer> images;
+    Context context;
+    String[] titles;
+    int[] images;
     LayoutInflater inflater;
 
-    public Adapter(Context ctx,List<String> titles, List<Integer> images) {
+    public Adapter(Context context, String[] titles, int[] images) {
+        this.context = context;
         this.titles = titles;
         this.images = images;
-        this.inflater = LayoutInflater.from(ctx);
-    }
-
-    @NonNull
-    @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = inflater.inflate(R.layout.custom_grid_category_item,parent,false);
-        return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
-        holder.textView.setText(titles.get(position));
-        holder.imageView.setImageResource(images.get(position));
-
+    public int getCount() {
+        return titles.length;
     }
 
     @Override
-    public int getItemCount() {
-        return titles.size();
+    public Object getItem(int position) {
+        return null;
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView textView;
-        ImageView imageView;
-        public ViewHolder(@NonNull View itemView) {
-            super(itemView);
-            textView = itemView.findViewById(R.id.item_tittle);
-            imageView = itemView.findViewById(R.id.item_image);
+    @Override
+    public long getItemId(int position) {
+        return 0;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        if (inflater==null){
+            inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
         }
+        if(convertView==null){
+            convertView = inflater.inflate(R.layout.custom_grid_category_item,null);
+        }
+        ImageView imageView = convertView.findViewById(R.id.item_images);
+        TextView textView = convertView.findViewById(R.id.item_titles);
+
+        imageView.setImageResource(images[position]);
+        textView.setText(titles[position]);
+        return convertView;
     }
 }
