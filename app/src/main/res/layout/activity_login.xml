@@ -64,10 +64,18 @@
                     android:layout_marginTop="10dp"
                     android:textSize="12sp"
                     android:hint="Enter your password"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/forgot_password_login"
+                    android:fontFamily="@font/poppinreg"
+                    android:layout_marginTop="10dp"
+                    android:text="Forgot Password?"/>
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="20dp"
+                    android:id="@+id/student_btn_login"
                     android:background="@drawable/custom_btn_border"
                     android:textAllCaps="true"
                     android:text="Login"/>
