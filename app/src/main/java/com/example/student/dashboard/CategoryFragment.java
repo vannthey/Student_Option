@@ -1,5 +1,6 @@
 package com.example.student.dashboard;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -12,6 +13,7 @@ import android.widget.GridView;
 import android.widget.Toast;
 
 import com.example.student.DashboardActivity;
+import com.example.student.FeedbackActivity;
 import com.example.student.R;
 
 public class CategoryFragment extends Fragment {
@@ -29,7 +31,19 @@ public class CategoryFragment extends Fragment {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getActivity(), titles[position], Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), titles[position], Toast.LENGTH_SHORT).show();
+               if (titles[position]=="Schedule"){
+
+               }else if (titles[position]=="Study Plan"){
+
+               }else if (titles[position]=="Attendance"){
+
+               }else if (titles[position]=="Feedback"){
+                   Intent intent = new Intent(getActivity(), FeedbackActivity.class);
+                   startActivity(intent);
+               }else if (titles[position]=="Score"){
+
+               }
             }
         });
         return view;

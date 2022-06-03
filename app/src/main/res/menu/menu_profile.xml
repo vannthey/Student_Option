@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item app:showAsAction="always"
+        android:icon="@drawable/ic_more_24"
+        android:title="">
+        <menu>
+            <item android:title="Change Profile"
+                app:showAsAction="ifRoom"
+                android:id="@+id/change_profile_in_menu"
+                android:icon="@drawable/ic_camera_24"/>
+            <item android:title="Sign out"
+                app:showAsAction="ifRoom"
+                android:id="@+id/sign_out_in_menu"
+                android:icon="@drawable/ic_sign_out_24"/>
+        </menu>
+    </item>
+
+
+
+</menu>
