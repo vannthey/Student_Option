@@ -1,11 +1,11 @@
 package com.example.student;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.student.attendance.Adapter_attendance;
 
@@ -42,7 +42,7 @@ public class AttendanceActivity extends AppCompatActivity {
         subject.add("Microeconomic");
         hour.add("45");
         permission.add("0");
-        absent.add("0");
+        absent.add("2");
 
         recyclerView = findViewById(R.id.attendance_item_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

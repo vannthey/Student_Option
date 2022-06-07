@@ -10,14 +10,13 @@ import android.view.ViewGroup;
 
 import com.example.student.R;
 
+public class NewsFragment extends Fragment {
 
-public class MenuFragment extends Fragment {
-    View view;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.fragment_menu, container, false);
+        View view = inflater.inflate(R.layout.fragment_newsfragment, container, false);
         return view;
     }
 }

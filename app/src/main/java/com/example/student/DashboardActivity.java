@@ -1,15 +1,15 @@
 package com.example.student;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
+import android.view.MenuItem;
 
 import com.example.student.dashboard.CategoryFragment;
-import com.example.student.dashboard.MenuFragment;
+import com.example.student.dashboard.NewsFragment;
+import com.google.android.material.navigation.NavigationBarView;
 
 
 public class DashboardActivity extends AppCompatActivity {
@@ -18,28 +18,24 @@ public class DashboardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-        //name student on dashboard
-        TextView student_name_dashboard = findViewById(R.id.student_name_dashboard);
-        //student rank on dashboard
-        TextView student_rank_dashboard = findViewById(R.id.student_rank_dashboard);
-        //student credit on dashboard
-        TextView student_credit_dashboard = findViewById(R.id.student_credit_dashboard);
-        //profile picture
-        de.hdodenhof.circleimageview.CircleImageView profile_dashboard  = findViewById(R.id.profile_dashboard);
-        profile_dashboard.setOnClickListener(new View.OnClickListener() {
+        NavigationBarView navigationBarView = findViewById(R.id.menu_dashboard);
+        // initial fragment category
+        getSupportFragmentManager().beginTransaction().replace(R.id.Frame_category,new CategoryFragment()).commit();
+
+        navigationBarView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(DashboardActivity.this, ProfileActivity.class);
-                startActivity(intent);
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.home_dashboard_menu:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.Frame_category,new CategoryFragment()).commit();
+                        break;
+                    case R.id.news_dashboard_menu:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.Frame_category,new NewsFragment()).commit();
+                        break;
+                }
+                return true;
             }
         });
 
-        student_rank_dashboard.setText("#2nd Rank");
-        student_credit_dashboard.setText("500");
-        student_name_dashboard.setText("Thorng Vanthey");
-//        call fragment category
-        getSupportFragmentManager().beginTransaction().replace(R.id.Frame_category,new CategoryFragment()).commit();
-//        call fragment menu
-        getSupportFragmentManager().beginTransaction().replace(R.id.Frame_menu, new MenuFragment()).commit();
     }
 }

@@ -14,9 +14,6 @@
             android:parentActivityName=".DashboardActivity"
             android:exported="false" />
         <activity
-            android:name=".NewsActivity"
-            android:exported="false" />
-        <activity
             android:name=".ProfileActivity"
             android:exported="false"
             android:parentActivityName=".DashboardActivity" />

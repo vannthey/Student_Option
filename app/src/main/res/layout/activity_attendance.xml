@@ -8,6 +8,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <include
             android:id="@+id/custom_toolbar_attendance"
             layout="@layout/custom_toolbar"/>
