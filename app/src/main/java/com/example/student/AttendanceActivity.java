@@ -1,11 +1,11 @@
 package com.example.student;
+
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
-import android.view.View;
 
 import com.example.student.attendance.Adapter_attendance;
 
@@ -18,11 +18,12 @@ public class AttendanceActivity extends AppCompatActivity {
     ArrayList<String> hour;
     ArrayList<String> permission;
     ArrayList<String> absent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attendance);
-        Toolbar actionbar= findViewById(R.id.custom_toolbar_attendance);
+        Toolbar actionbar = findViewById(R.id.custom_toolbar_attendance);
         actionbar.setTitle("Attendance");
         setSupportActionBar(actionbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -46,7 +47,7 @@ public class AttendanceActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.attendance_item_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter_attendance = new Adapter_attendance(this,subject,hour,permission,absent);
+        adapter_attendance = new Adapter_attendance(this, subject, hour, permission, absent);
         recyclerView.setAdapter(adapter_attendance);
 
 

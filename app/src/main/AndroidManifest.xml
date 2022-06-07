@@ -11,8 +11,8 @@
         android:theme="@style/Theme.Student">
         <activity
             android:name=".AttendanceActivity"
-            android:parentActivityName=".DashboardActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
         <activity
             android:name=".ProfileActivity"
             android:exported="false"

@@ -22,7 +22,7 @@ public class Adapter_category extends BaseAdapter {
         this.context = context;
         this.titles = titles;
         this.images = images;
-        this.images_background= images_background;
+        this.images_background = images_background;
     }
 
     @Override
@@ -42,11 +42,11 @@ public class Adapter_category extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        if (inflater==null){
+        if (inflater == null) {
             inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
         }
-        if(convertView==null){
-            convertView = inflater.inflate(R.layout.custom_grid_category_item,null);
+        if (convertView == null) {
+            convertView = inflater.inflate(R.layout.custom_grid_category_item, null);
         }
         ImageView icon_category = convertView.findViewById(R.id.item_images);
         TextView textView = convertView.findViewById(R.id.item_titles);

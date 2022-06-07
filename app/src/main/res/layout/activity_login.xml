@@ -5,80 +5,90 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".LoginActivity">
-        <LinearLayout
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/usea" />
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:orientation="vertical"
-            android:gravity="center">
-                <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_marginBottom="20dp"
-                    android:src="@drawable/usea"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/semibold"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
-                    android:textColor="@color/black"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:text="@string/university_name"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
+            android:fontFamily="@font/semibold"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/university_name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="20dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppinreg"
-                    android:textColor="@color/black"
-                    android:text="@string/student_ID"/>
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/custom_border"
-                    android:paddingStart="10dp"
-                    android:textSize="12sp"
-                    android:fontFamily="@font/poppinreg"
-                    android:hint="Enter your student ID"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppinreg"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:text="@string/password"/>
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:fontFamily="@font/poppinreg"
-                    android:background="@drawable/custom_border"
-                    android:paddingStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:textSize="12sp"
-                    android:hint="Enter your password"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/forgot_password_login"
-                    android:fontFamily="@font/poppinreg"
-                    android:layout_marginTop="10dp"
-                    android:text="Forgot Password?"/>
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="20dp"
-                    android:id="@+id/student_btn_login"
-                    android:background="@drawable/custom_btn_border"
-                    android:textAllCaps="false"
-                    android:text="Login"/>
-        </LinearLayout>
+            android:fontFamily="@font/poppinreg"
+            android:text="@string/student_ID"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_border"
+            android:fontFamily="@font/poppinreg"
+            android:hint="Enter your student ID"
+            android:paddingStart="10dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppinreg"
+            android:text="@string/password"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_border"
+            android:fontFamily="@font/poppinreg"
+            android:hint="Enter your password"
+            android:paddingStart="10dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/forgot_password_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinreg"
+            android:text="Forgot Password?" />
+
+        <Button
+            android:id="@+id/student_btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_btn_border"
+            android:text="Login"
+            android:textAllCaps="false" />
+    </LinearLayout>
 
 </LinearLayout>

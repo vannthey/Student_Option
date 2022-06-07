@@ -1,16 +1,8 @@
 package com.example.student;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -20,9 +12,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.github.drjacky.imagepicker.ImagePicker;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
-import org.w3c.dom.Text;
+import com.github.drjacky.imagepicker.ImagePicker;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -86,18 +81,18 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-            Uri uri = data.getData();
-            profile_image.setImageURI(uri);
+        Uri uri = data.getData();
+        profile_image.setImageURI(uri);
     }
 
     //sign out
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId()==R.id.sign_out_in_menu){
+        if (item.getItemId() == R.id.sign_out_in_menu) {
             Intent intent = new Intent(ProfileActivity.this, LoginActivity.class);
             startActivity(intent);
             return true;
-        }else if(item.getItemId()==R.id.change_profile_in_menu){
+        } else if (item.getItemId() == R.id.change_profile_in_menu) {
             ImagePicker.Companion.with(ProfileActivity.this)
                     .maxResultSize(1080, 1080)
                     .crop().cropOval().compress(1024)
@@ -105,10 +100,11 @@ public class ProfileActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_profile,menu);
+        inflater.inflate(R.menu.menu_profile, menu);
         return super.onCreateOptionsMenu(menu);
     }
 }

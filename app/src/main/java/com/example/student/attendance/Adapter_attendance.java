@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.LinearSmoothScroller;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.student.R;
@@ -60,7 +59,7 @@ public class Adapter_attendance extends RecyclerView.Adapter<Adapter_attendance.
         return subject.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView textTitle, textHours, textPermissions, textAbsents;
 
