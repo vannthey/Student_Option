@@ -6,11 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.GridView;
 import android.widget.TextView;
-import android.widget.Toast;
-import com.example.student.dashboard.Adapter;
+
 import com.example.student.dashboard.CategoryFragment;
 import com.example.student.dashboard.MenuFragment;
 

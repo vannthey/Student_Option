@@ -15,7 +15,6 @@ public class FeedbackActivity extends AppCompatActivity {
         actionbar.setTitle("Give Feedback");
         setSupportActionBar(actionbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
     }
 
 }

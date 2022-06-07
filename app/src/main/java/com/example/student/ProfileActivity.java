@@ -77,6 +77,7 @@ public class ProfileActivity extends AppCompatActivity {
             public void onClick(View v) {
                 ImagePicker.Companion.with(ProfileActivity.this)
                         .maxResultSize(1080, 1080)
+                        .crop().cropOval().compress(1024)
                         .start(20);
             }
         });
@@ -85,10 +86,8 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
             Uri uri = data.getData();
             profile_image.setImageURI(uri);
-
     }
 
     //sign out
@@ -101,7 +100,8 @@ public class ProfileActivity extends AppCompatActivity {
         }else if(item.getItemId()==R.id.change_profile_in_menu){
             ImagePicker.Companion.with(ProfileActivity.this)
                     .maxResultSize(1080, 1080)
-                    .start(20);
+                    .crop().cropOval().compress(1024)
+                    .start();
         }
         return super.onOptionsItemSelected(item);
     }

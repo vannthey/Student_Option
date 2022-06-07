@@ -10,17 +10,19 @@ import android.widget.TextView;
 
 import com.example.student.R;
 
-public class Adapter extends BaseAdapter {
+public class Adapter_category extends BaseAdapter {
 
     Context context;
     String[] titles;
     int[] images;
+    int[] images_background;
     LayoutInflater inflater;
 
-    public Adapter(Context context, String[] titles, int[] images) {
+    public Adapter_category(Context context, String[] titles, int[] images, int[] images_background) {
         this.context = context;
         this.titles = titles;
         this.images = images;
+        this.images_background= images_background;
     }
 
     @Override
@@ -46,11 +48,13 @@ public class Adapter extends BaseAdapter {
         if(convertView==null){
             convertView = inflater.inflate(R.layout.custom_grid_category_item,null);
         }
-        ImageView imageView = convertView.findViewById(R.id.item_images);
+        ImageView icon_category = convertView.findViewById(R.id.item_images);
         TextView textView = convertView.findViewById(R.id.item_titles);
+        ImageView background = convertView.findViewById(R.id.item_images_background);
 
-        imageView.setImageResource(images[position]);
+        icon_category.setImageResource(images[position]);
         textView.setText(titles[position]);
+        background.setImageResource(images_background[position]);
         return convertView;
     }
 }

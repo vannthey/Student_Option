@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -8,12 +9,33 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_margin="10dp">
-        <ImageView
-            android:id="@+id/item_images"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:paddingStart="10dp"
-            android:layout_marginTop="35dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/item_images_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/item_images"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:paddingStart="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/item_images_background"
+                app:layout_constraintEnd_toEndOf="@+id/item_images_background"
+                app:layout_constraintHorizontal_bias="0.045"
+                app:layout_constraintStart_toStartOf="@+id/item_images_background"
+                app:layout_constraintTop_toTopOf="@+id/item_images_background" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <TextView
             android:id="@+id/item_titles"
             android:layout_width="wrap_content"
