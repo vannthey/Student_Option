@@ -1,9 +1,11 @@
-package com.example.student;
+package com.example.student.student_account;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
+import com.example.student.R;
 
 public class FeedbackActivity extends AppCompatActivity {
 

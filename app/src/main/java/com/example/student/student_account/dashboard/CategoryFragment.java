@@ -1,4 +1,4 @@
-package com.example.student.dashboard;
+package com.example.student.student_account.dashboard;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,9 +12,10 @@ import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.student.AttendanceActivity;
-import com.example.student.FeedbackActivity;
-import com.example.student.ProfileActivity;
+import com.example.student.student_account.StudyPlanActivity;
+import com.example.student.student_account.AttendanceActivity;
+import com.example.student.student_account.FeedbackActivity;
+import com.example.student.student_account.ProfileActivity;
 import com.example.student.R;
 
 public class CategoryFragment extends Fragment {
@@ -56,7 +57,8 @@ public class CategoryFragment extends Fragment {
                 if (titles[position] == "Schedule") {
 
                 } else if (titles[position] == "Study Plan") {
-
+                    Intent intent = new Intent(getActivity(), StudyPlanActivity.class);
+                    startActivity(intent);
                 } else if (titles[position] == "Attendance") {
                     Intent intent = new Intent(getActivity(), AttendanceActivity.class);
                     startActivity(intent);

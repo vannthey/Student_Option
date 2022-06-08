@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".student_account.StudyPlanActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include android:id="@+id/custom_toolbar_studyplan"
+            layout="@layout/custom_toolbar"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.5"
+        android:background="@color/gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/subject_title_studyplan"
+                android:fontFamily="@font/semibold"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="xxxx"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text=" - "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="Study Plan"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What course will go on"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/custom_btn_border"
+                        android:textSize="12sp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/poppinreg"
+                        android:text="Freshmen"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/custom_btn_border"
+                        android:fontFamily="@font/poppinreg"
+                        android:text="Sophomore"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/custom_btn_border"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppinreg"
+                        android:text="Junior"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/custom_btn_border"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppinreg"
+                        android:text="Senior"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+</LinearLayout>
