@@ -10,25 +10,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Student">
         <activity
-            android:name=".student_account.StudyPlanActivity"
+            android:name=".DetailActivity_score"
             android:exported="false" />
         <activity
-            android:name=".student_account.AttendanceActivity"
+            android:name=".ScoreActivity"
             android:exported="false"
-            android:parentActivityName=".student_account.DashboardActivity" />
+            android:parentActivityName=".DashboardActivity" />
         <activity
-            android:name=".student_account.ProfileActivity"
-            android:exported="false"
-            android:parentActivityName=".student_account.DashboardActivity" />
-        <activity
-            android:name=".student_account.FeedbackActivity"
-            android:exported="false"
-            android:parentActivityName=".student_account.DashboardActivity" />
-        <activity
-            android:name=".student_account.DashboardActivity"
+            android:name=".test"
             android:exported="false" />
         <activity
-            android:name=".student_account.LoginActivity"
+            android:name=".StudyPlanActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".AttendanceActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

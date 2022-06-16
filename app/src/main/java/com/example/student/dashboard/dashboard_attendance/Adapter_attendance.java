@@ -1,4 +1,4 @@
-package com.example.student.student_account.attendance;
+package com.example.student.dashboard.dashboard_attendance;
 
 import android.content.Context;
 import android.view.LayoutInflater;

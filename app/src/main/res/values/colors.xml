@@ -12,4 +12,6 @@
     <color name="blue_sky">#2889fc</color>
     <color name="yellow">#E59700</color>
     <color name="Red">#D91C1C</color>
+    <color name="non_photo_blue">#AADAF0</color>
+    <color name="green">#38920D</color>
 </resources>

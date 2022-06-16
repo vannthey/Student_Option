@@ -1,4 +1,4 @@
-package com.example.student.student_account;
+package com.example.student;
 
 import android.os.Bundle;
 

@@ -1,4 +1,4 @@
-package com.example.student.student_account;
+package com.example.student;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -6,9 +6,8 @@ import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.student.R;
-import com.example.student.student_account.dashboard.CategoryFragment;
-import com.example.student.student_account.dashboard.NewsFragment;
+import com.example.student.dashboard.dashboard_home.CategoryFragment;
+import com.example.student.dashboard.dashboard_news.NewsFragment;
 import com.google.android.material.navigation.NavigationBarView;
 
 

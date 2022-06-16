@@ -19,26 +19,43 @@
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/ic_launcher_background.xml" value="0.129" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/ic_schedule_24.xml" value="0.232" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/ic_score_24.xml" value="0.232" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/tab_indecator.xml" value="0.16" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_attendance.xml" value="0.33" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_detail_score.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_feedback.xml" value="0.25" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_forgotpassword.xml" value="0.371875" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_news.xml" value="0.33" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_profile.xml" value="0.25" />
-        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_studyplan.xml" value="0.2" />
-        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_cardview_item_attendance.xml" value="0.25" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_score.xml" value="0.25" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_studyplan.xml" value="0.33" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_test.xml" value="0.40260416666666665" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_assigment_news.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_cardview_item_attendance.xml" value="0.33" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_cardview_item_score.xml" value="0.33" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_cardview_score_s1.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_cardview_score_semester.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_dialog_forgotpassword.xml" value="0.371875" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_grid_category_item.xml" value="0.25" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_homework_news.xml" value="0.25" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_item_studyplan.xml" value="0.75" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_list_freshman_studyplan.xml" value="0.33" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_list_item_news.xml" value="0.36153846153846153" />
-        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_midterm_news.xml" value="0.37083333333333335" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_midterm_news.xml" value="0.25" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_semester_studyplan.xml" value="0.25" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_toolbar.xml" value="0.33" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_toolbar_action.xml" value="0.209375" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_toolbar_profile.xml" value="0.371875" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/fragment_category.xml" value="0.18" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/fragment_freshman.xml" value="0.33" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/fragment_freshman_score.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/fragment_freshman_studyplan.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/fragment_freshmen.xml" value="0.33" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/fragment_menu.xml" value="0.22447916666666667" />
-        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/fragment_newsfragment.xml" value="0.22" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/fragment_newsfragment.xml" value="0.25" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/freshman_semester1.xml" value="0.5" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/list_item_news.xml" value="0.37083333333333335" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/menu/menu_dashboard.xml" value="0.21041666666666667" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/menu/menu_profile.xml" value="0.371875" />

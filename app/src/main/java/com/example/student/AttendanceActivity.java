@@ -1,4 +1,4 @@
-package com.example.student.student_account;
+package com.example.student;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,8 +8,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.student.R;
-import com.example.student.student_account.attendance.Adapter_attendance;
+import com.example.student.dashboard.dashboard_attendance.Adapter_attendance;
 
 import java.util.ArrayList;
 

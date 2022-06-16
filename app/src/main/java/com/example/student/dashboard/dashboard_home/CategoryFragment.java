@@ -1,4 +1,4 @@
-package com.example.student.student_account.dashboard;
+package com.example.student.dashboard.dashboard_home;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,10 +12,11 @@ import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.student.student_account.StudyPlanActivity;
-import com.example.student.student_account.AttendanceActivity;
-import com.example.student.student_account.FeedbackActivity;
-import com.example.student.student_account.ProfileActivity;
+import com.example.student.ScoreActivity;
+import com.example.student.StudyPlanActivity;
+import com.example.student.AttendanceActivity;
+import com.example.student.FeedbackActivity;
+import com.example.student.ProfileActivity;
 import com.example.student.R;
 
 public class CategoryFragment extends Fragment {
@@ -66,6 +67,9 @@ public class CategoryFragment extends Fragment {
                     Intent intent = new Intent(getActivity(), FeedbackActivity.class);
                     startActivity(intent);
                 } else if (titles[position] == "Score") {
+
+                    Intent intent = new Intent(getActivity(), ScoreActivity.class);
+                    startActivity(intent);
 
                 }
             }

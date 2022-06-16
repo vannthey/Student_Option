@@ -1,4 +1,4 @@
-package com.example.student.student_account;
+package com.example.student;
 
 import android.content.Intent;
 import android.graphics.Paint;
@@ -10,8 +10,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.student.R;
 
 public class LoginActivity extends AppCompatActivity {
 
