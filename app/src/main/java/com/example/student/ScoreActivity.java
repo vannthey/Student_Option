@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -16,6 +17,7 @@ import com.example.student.dashboard.dashboard_score.FreshmanFragment_score;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class ScoreActivity extends AppCompatActivity {
 
@@ -24,6 +26,7 @@ public class ScoreActivity extends AppCompatActivity {
 
     TabAdapter tabAdapter;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,9 +34,9 @@ public class ScoreActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.custom_toolbar_score);
         setSupportActionBar(toolbar);
         toolbar.setTitle("Score");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         TextView subject_title_score = findViewById(R.id.subject_title_score);
-        subject_title_score.setText("IT");
+        subject_title_score.setText("Information Technology");
 
         tabLayout = findViewById(R.id.tab_menu_score);
         viewPager = findViewById(R.id.view_pager_menu_score);
@@ -50,14 +53,16 @@ public class ScoreActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
     }
-    private class TabAdapter extends FragmentPagerAdapter{
+
+    static class TabAdapter extends FragmentPagerAdapter {
         ArrayList<Fragment> fragmentArrayList = new ArrayList<>();
         ArrayList<String> stringArrayList = new ArrayList<>();
 
-        public void setFragment(Fragment fragment, String menu){
+        public void setFragment(Fragment fragment, String menu) {
             fragmentArrayList.add(fragment);
             stringArrayList.add(menu);
         }
+
         public TabAdapter(@NonNull FragmentManager fm) {
             super(fm);
         }

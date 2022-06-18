@@ -1,71 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none">
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginEnd="10dp"
-                android:fontFamily="@font/poppinreg"
-                android:text="semester 1"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/semester_1"
                 android:textAllCaps="true"
                 android:textSize="12sp" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view_s1_score"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:padding="10dp" />
 
             <TextView
                 android:id="@+id/view_detail_score_semester1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
-                android:fontFamily="@font/poppinreg"
+                android:fontFamily="@font/poppins_regular"
                 android:gravity="end"
-                android:text="View Detail >"
+                android:text="@string/view_detail"
                 android:textSize="12sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginEnd="10dp"
-                android:fontFamily="@font/poppinreg"
+                android:fontFamily="@font/poppins_regular"
                 android:gravity="center"
-                android:text="semester 2"
+                android:text="@string/semester_2"
                 android:textAllCaps="true"
                 android:textSize="12sp" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view_s2_score"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:padding="10dp" />
 
             <TextView
                 android:id="@+id/view_detail_score_semester2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
-                android:fontFamily="@font/poppinreg"
+                android:fontFamily="@font/poppins_regular"
                 android:gravity="end"
-                android:text="View Detail >"
+                android:text="@string/view_detail"
                 android:textSize="12sp" />
         </LinearLayout>
     </ScrollView>
 
-    </LinearLayout>
+</LinearLayout>

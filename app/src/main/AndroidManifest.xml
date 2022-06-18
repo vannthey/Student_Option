@@ -10,8 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Student">
         <activity
-            android:name=".DetailActivity_score"
-            android:exported="false" />
+            android:name=".ScheduleActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
         <activity
             android:name=".ScoreActivity"
             android:exported="false"

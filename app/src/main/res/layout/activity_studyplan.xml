@@ -10,8 +10,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <include android:id="@+id/custom_toolbar_studyplan"
-            layout="@layout/custom_toolbar"/>
+        <include
+            android:id="@+id/custom_toolbar_studyPlan"
+            layout="@layout/custom_toolbar" />
     </RelativeLayout>
     <View
         android:layout_width="match_parent"
@@ -27,35 +28,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/subject_title_studyplan"
-                android:fontFamily="@font/semibold"
-                android:textSize="14sp"
-                android:textColor="@color/black"
-                android:text="xxxx"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/semibold"
-                android:textSize="14sp"
-                android:textColor="@color/black"
-                android:text=" - "/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/semibold"
+                android:id="@+id/subject_title_studyPlan"
+                android:fontFamily="@font/poppins_semi_bold"
                 android:textSize="14sp"
                 android:textColor="@color/black"
-                android:text="Study Plan"/>
+                android:text="@string/Sample_txt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="@string/dash" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="@string/Study_Plan" />
 
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="What course will go on"
+            android:text="@string/What_course_will_go_on"
             android:textSize="12sp"/>
     </LinearLayout>
 
@@ -73,7 +76,7 @@
             app:tabIndicatorGravity="stretch"
             app:tabSelectedTextColor="@color/white"
             app:tabIndicatorAnimationMode="elastic"
-            app:tabIndicator="@drawable/tab_indecator"
+            app:tabIndicator="@drawable/tab_indicator"
             app:tabTextAppearance="@style/TabTextSize"/>
     </LinearLayout>
     <androidx.viewpager.widget.ViewPager

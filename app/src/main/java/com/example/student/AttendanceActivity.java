@@ -1,7 +1,6 @@
 package com.example.student;
 
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -11,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.student.dashboard.dashboard_attendance.Adapter_attendance;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class AttendanceActivity extends AppCompatActivity {
     RecyclerView recyclerView;
@@ -24,7 +24,7 @@ public class AttendanceActivity extends AppCompatActivity {
         Toolbar actionbar = findViewById(R.id.custom_toolbar_attendance);
         actionbar.setTitle("Attendance");
         setSupportActionBar(actionbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         //add subject, hour, permission, absent
         subject = new ArrayList<>();
@@ -64,14 +64,11 @@ public class AttendanceActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.attendance_item_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter_attendance = new Adapter_attendance(this, subject, hour, permission, absent);
+        adapter_attendance = new Adapter_attendance(subject, hour, permission, absent);
         recyclerView.setAdapter(adapter_attendance);
 
-        recyclerView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        recyclerView.setOnClickListener(v -> {
 
-            }
         });
 
     }

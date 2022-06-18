@@ -1,4 +1,4 @@
-package com.example.student.studyplan;
+package com.example.student.dashboard.studyplan;
 
 import android.os.Bundle;
 
@@ -28,8 +28,8 @@ public class FreshmanFragment_studyPlan extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_freshman_studyplan, container, false);
-        recyclerView_s1 = view.findViewById(R.id.recycler_view__studyplay_s1);
-        recyclerView_s2=  view.findViewById(R.id.recycler_view_studyplan_s2);
+        recyclerView_s1 = view.findViewById(R.id.recycler_view_study_plan_s1);
+        recyclerView_s2 = view.findViewById(R.id.recycler_view_study_plan_s2);
         //semester1 obj
         subject_s1 = new ArrayList<>();
         hour_s1 = new ArrayList<>();

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
@@ -18,14 +19,15 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
 
                 <TextView
                     android:id="@+id/subject_score_semester"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/semibold"
-                    android:text="XXXXXXXXX"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:text="@string/Sample_txt"
                     android:textColor="@color/black"
                     android:textSize="12sp" />
 
@@ -39,9 +41,9 @@
                         android:id="@+id/rank_score_semester"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/semibold"
+                        android:fontFamily="@font/poppins_semi_bold"
                         android:gravity="center"
-                        android:text="XX"
+                        android:text="@string/Sample_txt"
                         android:textAllCaps="true"
                         android:textColor="@color/green"
                         android:textSize="12sp" />
@@ -49,9 +51,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppinreg"
+                        android:fontFamily="@font/poppins_regular"
                         android:gravity="center"
-                        android:text="rank"
+                        android:text="@string/rank"
                         android:textAllCaps="true"
                         android:textColor="@color/black"
                         android:textSize="12sp" />
@@ -61,7 +63,7 @@
                 <View
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
-                    android:alpha="0.1"
+                    android:alpha="0.5"
                     android:background="@color/gray" />
 
                 <LinearLayout
@@ -74,9 +76,9 @@
                         android:id="@+id/grade_score_semester"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/semibold"
+                        android:fontFamily="@font/poppins_semi_bold"
                         android:gravity="center"
-                        android:text="XX"
+                        android:text="@string/Sample_txt"
                         android:textAllCaps="true"
                         android:textColor="@color/green"
                         android:textSize="12sp" />
@@ -84,9 +86,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppinreg"
+                        android:fontFamily="@font/poppins_regular"
                         android:gravity="center"
-                        android:text="grade"
+                        android:text="@string/grade"
                         android:textAllCaps="true"
                         android:textColor="@color/black"
                         android:textSize="12sp" />
@@ -96,7 +98,7 @@
                 <View
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
-                    android:alpha="0.1"
+                    android:alpha="0.5"
                     android:background="@color/gray" />
 
                 <LinearLayout
@@ -109,9 +111,9 @@
                         android:id="@+id/total_score_semester"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/semibold"
+                        android:fontFamily="@font/poppins_semi_bold"
                         android:gravity="center"
-                        android:text="XX"
+                        android:text="@string/Sample_txt"
                         android:textAllCaps="true"
                         android:textColor="@color/green"
                         android:textSize="12sp" />
@@ -119,9 +121,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppinreg"
+                        android:fontFamily="@font/poppins_regular"
                         android:gravity="center"
-                        android:text="total"
+                        android:text="@string/total"
                         android:textAllCaps="true"
                         android:textColor="@color/black"
                         android:textSize="12sp" />

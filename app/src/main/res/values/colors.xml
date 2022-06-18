@@ -14,4 +14,6 @@
     <color name="Red">#D91C1C</color>
     <color name="non_photo_blue">#AADAF0</color>
     <color name="green">#38920D</color>
+    <color name="light_pink">#FF8989</color>
+    <color name="blue_light">#5FADF5</color>
 </resources>

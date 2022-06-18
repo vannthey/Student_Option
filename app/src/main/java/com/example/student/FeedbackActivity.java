@@ -7,6 +7,8 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.example.student.R;
 
+import java.util.Objects;
+
 public class FeedbackActivity extends AppCompatActivity {
 
     @Override
@@ -16,7 +18,7 @@ public class FeedbackActivity extends AppCompatActivity {
         Toolbar actionbar = findViewById(R.id.custom_toolbar_feedback);
         actionbar.setTitle("Give Feedback");
         setSupportActionBar(actionbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
     }
 
 }

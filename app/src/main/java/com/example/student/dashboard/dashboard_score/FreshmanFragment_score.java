@@ -13,7 +13,6 @@ import android.view.ViewGroup;
 import com.example.student.R;
 import com.example.student.dashboard.dashboard_score.Adapter_score.Adapter_Freshman_S1_Score;
 import com.example.student.dashboard.dashboard_score.Adapter_score.Adapter_Freshman_S2_Score;
-import com.example.student.studyplan.Adapter_Freshman_S1_StudyPlan;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,11 +21,11 @@ public class FreshmanFragment_score extends Fragment {
     RecyclerView recyclerView_s1;
     RecyclerView recyclerView_s2;
 
-    private List<String> Subject_S1, Rank_S1, Grade_S1, Total_S1;
-    private List<String> Subject_S2, Rank_S2, Grade_S2, Total_S2;
+    List<String> Subject_S1, Rank_S1, Grade_S1, Total_S1;
+    List<String> Subject_S2, Rank_S2, Grade_S2, Total_S2;
 
-    private Adapter_Freshman_S1_Score adapter_freshman_s1_score;
-    private Adapter_Freshman_S2_Score adapter_freshman_s2_score;
+    Adapter_Freshman_S1_Score adapter_freshman_s1_score;
+    Adapter_Freshman_S2_Score adapter_freshman_s2_score;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -46,24 +45,26 @@ public class FreshmanFragment_score extends Fragment {
 
         setViewSemester1();
         recyclerView_s1 = view.findViewById(R.id.recycler_view_s1_score);
-        recyclerView_s1.setLayoutManager(new LinearLayoutManager(getContext()){
+        recyclerView_s1.setHasFixedSize(true);
+        recyclerView_s1.setLayoutManager(new LinearLayoutManager(getContext()) {
             @Override
             public boolean canScrollVertically() {
                 return false;
             }
         });
-        adapter_freshman_s1_score = new Adapter_Freshman_S1_Score(getContext(), Subject_S1, Rank_S1, Grade_S1, Total_S1);
+        adapter_freshman_s1_score = new Adapter_Freshman_S1_Score(Subject_S1, Rank_S1, Grade_S1, Total_S1);
         recyclerView_s1.setAdapter(adapter_freshman_s1_score);
 
         setViewSemester2();
         recyclerView_s2 = view.findViewById(R.id.recycler_view_s2_score);
-        recyclerView_s2.setLayoutManager(new LinearLayoutManager(getContext()){
+        recyclerView_s2.setHasFixedSize(true);
+        recyclerView_s2.setLayoutManager(new LinearLayoutManager(getContext()) {
             @Override
             public boolean canScrollVertically() {
                 return false;
             }
         });
-        adapter_freshman_s2_score = new Adapter_Freshman_S2_Score(getContext(),Subject_S2,Rank_S2,Grade_S2,Total_S2);
+        adapter_freshman_s2_score = new Adapter_Freshman_S2_Score(Subject_S2, Rank_S2, Grade_S2, Total_S2);
         recyclerView_s2.setAdapter(adapter_freshman_s2_score);
         recyclerView_s2.setNestedScrollingEnabled(false);
         return view;
@@ -101,6 +102,7 @@ public class FreshmanFragment_score extends Fragment {
         Total_S1.add("600");
 
     }
+
     private void setViewSemester2() {
         Subject_S2.add("Java Programing");
         Rank_S2.add("#1");

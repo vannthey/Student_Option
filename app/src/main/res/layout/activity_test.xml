@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,26 +7,26 @@
     tools:context=".test">
 
     <TextView
-        android:id="@+id/txtsub"
+        android:id="@+id/txt_sub"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="@string/Sample_txt" />
 
     <TextView
-        android:id="@+id/txtdate"
+        android:id="@+id/txt_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="@string/Sample_txt" />
 
     <TextView
-        android:id="@+id/txttime"
+        android:id="@+id/txt_time"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="@string/Sample_txt" />
 
     <TextView
-        android:id="@+id/txtroom"
+        android:id="@+id/txt_room"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="@string/Sample_txt" />
 </LinearLayout>

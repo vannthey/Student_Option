@@ -36,24 +36,24 @@
                 android:id="@+id/subject_title_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/semibold"
-                android:text="xxxx"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="@string/Sample_txt"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/semibold"
-                android:text=" - "
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="@string/dash"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/semibold"
-                android:text="Score"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="@string/Score"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
 
@@ -62,7 +62,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Follow up with your score"
+            android:text="@string/Follow_up_with_your_score"
             android:textSize="12sp" />
     </LinearLayout>
     <LinearLayout
@@ -79,7 +79,7 @@
             app:tabIndicatorGravity="stretch"
             app:tabSelectedTextColor="@color/white"
             app:tabIndicatorAnimationMode="elastic"
-            app:tabIndicator="@drawable/tab_indecator"
+            app:tabIndicator="@drawable/tab_indicator"
             app:tabTextAppearance="@style/TabTextSize"/>
     </LinearLayout>
     <androidx.viewpager.widget.ViewPager

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="5dp"
@@ -8,7 +9,8 @@
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scrollbars="none">
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -26,9 +28,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/semibold"
+                    android:fontFamily="@font/poppins_semi_bold"
                     android:gravity="center"
-                    android:text="Semester 1"
+                    android:text="@string/semester_1"
                     android:textColor="@color/black"
                     android:textSize="12sp" />
 
@@ -40,27 +42,27 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/semibold"
+                    android:fontFamily="@font/poppins_semi_bold"
                     android:gravity="center"
-                    android:text="270"
+                    android:text="@string/_270"
                     android:textColor="@color/black"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/semibold"
+                    android:fontFamily="@font/poppins_semi_bold"
                     android:gravity="center"
-                    android:text="Hour,"
+                    android:text="@string/hour"
                     android:textAllCaps="true"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/semibold"
+                    android:fontFamily="@font/poppins_semi_bold"
                     android:gravity="center"
-                    android:text="15"
+                    android:text="@string/_15"
                     android:textColor="@color/black"
                     android:textSize="12sp" />
 
@@ -68,9 +70,9 @@
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="10dp"
-                    android:fontFamily="@font/semibold"
+                    android:fontFamily="@font/poppins_semi_bold"
                     android:gravity="center"
-                    android:text="Credit"
+                    android:text="@string/credit"
                     android:textAllCaps="true"
                     android:textSize="12sp" />
 
@@ -85,9 +87,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/semibold"
+                    android:fontFamily="@font/poppins_semi_bold"
                     android:gravity="center"
-                    android:text="Subject"
+                    android:text="@string/subject"
                     android:textColor="@color/black"
                     android:textSize="12sp" />
 
@@ -106,9 +108,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/semibold"
+                    android:fontFamily="@font/poppins_semi_bold"
                     android:gravity="center"
-                    android:text="Credit"
+                    android:text="@string/credit"
                     android:textColor="@color/black"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -123,7 +125,7 @@
                 android:layout_height="5dp" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_view__studyplay_s1"
+                android:id="@+id/recycler_view_study_plan_s1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingStart="10dp"
@@ -139,9 +141,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/semibold"
+                    android:fontFamily="@font/poppins_semi_bold"
                     android:gravity="center"
-                    android:text="Semester 2"
+                    android:text="@string/semester_2"
                     android:textColor="@color/black"
                     android:textSize="12sp" />
 
@@ -153,27 +155,27 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/semibold"
+                    android:fontFamily="@font/poppins_semi_bold"
                     android:gravity="center"
-                    android:text="270"
+                    android:text="@string/_270"
                     android:textColor="@color/black"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/semibold"
+                    android:fontFamily="@font/poppins_semi_bold"
                     android:gravity="center"
-                    android:text="Hour,"
+                    android:text="@string/hour"
                     android:textAllCaps="true"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/semibold"
+                    android:fontFamily="@font/poppins_semi_bold"
                     android:gravity="center"
-                    android:text="15"
+                    android:text="@string/_15"
                     android:textColor="@color/black"
                     android:textSize="12sp" />
 
@@ -181,9 +183,9 @@
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="10dp"
-                    android:fontFamily="@font/semibold"
+                    android:fontFamily="@font/poppins_semi_bold"
                     android:gravity="center"
-                    android:text="Credit"
+                    android:text="@string/credit"
                     android:textAllCaps="true"
                     android:textSize="12sp" />
 
@@ -198,9 +200,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/semibold"
+                    android:fontFamily="@font/poppins_semi_bold"
                     android:gravity="center"
-                    android:text="Subject"
+                    android:text="@string/subject"
                     android:textColor="@color/black"
                     android:textSize="12sp" />
 
@@ -219,9 +221,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/semibold"
+                    android:fontFamily="@font/poppins_semi_bold"
                     android:gravity="center"
-                    android:text="Credit"
+                    android:text="@string/credit"
                     android:textColor="@color/black"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -232,7 +234,7 @@
                 android:background="@color/gray" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_view_studyplan_s2"
+                android:id="@+id/recycler_view_study_plan_s2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingStart="10dp"

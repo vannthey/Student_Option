@@ -1,6 +1,5 @@
 package com.example.student.dashboard.dashboard_attendance;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,14 +14,12 @@ import java.util.List;
 
 public class Adapter_attendance extends RecyclerView.Adapter<Adapter_attendance.ViewHolder> {
 
-    private LayoutInflater layoutInflater;
-    private List<String> subject;
-    private List<String> hour;
-    private List<String> permission;
-    private List<String> absent;
+    private final List<String> subject;
+    private final List<String> hour;
+    private final List<String> permission;
+    private final List<String> absent;
 
-    public Adapter_attendance(Context context, List<String> subject, List<String> hour, List<String> permission, List<String> absent) {
-        this.layoutInflater = layoutInflater.from(context);
+    public Adapter_attendance(List<String> subject, List<String> hour, List<String> permission, List<String> absent) {
         this.subject = subject;
         this.hour = hour;
         this.permission = permission;
@@ -33,7 +30,7 @@ public class Adapter_attendance extends RecyclerView.Adapter<Adapter_attendance.
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view = layoutInflater.inflate(R.layout.custom_cardview_item_attendance, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.custom_cardview_item_attendance, parent, false);
 
         return new ViewHolder(view);
     }
@@ -51,7 +48,6 @@ public class Adapter_attendance extends RecyclerView.Adapter<Adapter_attendance.
         holder.textHours.setText(hours);
         holder.textPermissions.setText(permissions);
         holder.textAbsents.setText(absents);
-
     }
 
     @Override
@@ -59,16 +55,16 @@ public class Adapter_attendance extends RecyclerView.Adapter<Adapter_attendance.
         return subject.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    static class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView textTitle, textHours, textPermissions, textAbsents;
+        private final TextView textTitle, textHours, textPermissions, textAbsents;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             textTitle = itemView.findViewById(R.id.subject_attendance);
             textHours = itemView.findViewById(R.id.hour_attendance);
-            textPermissions = itemView.findViewById(R.id.permisson_attendance);
+            textPermissions = itemView.findViewById(R.id.permission_attendance);
             textAbsents = itemView.findViewById(R.id.absent_attendance);
 
 

@@ -1,6 +1,5 @@
 package com.example.student.dashboard.dashboard_score.Adapter_score;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,14 +14,15 @@ import java.util.List;
 
 public class Adapter_Freshman_S1_Score extends RecyclerView.Adapter<Adapter_Freshman_S1_Score.ViewHolder> {
 
-    private List<String> Subject_S1,Rank_S1,Grade_S1,Total_S1;
+    private final List<String> Subject_S1, Rank_S1, Grade_S1, Total_S1;
 
-    public Adapter_Freshman_S1_Score(Context context,List<String> subject_S1, List<String> rank_S1, List<String> grade_S1, List<String> total_S1) {
+    public Adapter_Freshman_S1_Score(List<String> subject_S1, List<String> rank_S1, List<String> grade_S1, List<String> total_S1) {
         Subject_S1 = subject_S1;
         Rank_S1 = rank_S1;
         Grade_S1 = grade_S1;
         Total_S1 = total_S1;
     }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -48,7 +48,7 @@ public class Adapter_Freshman_S1_Score extends RecyclerView.Adapter<Adapter_Fres
         return Subject_S1.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    static class ViewHolder extends RecyclerView.ViewHolder {
         TextView txtSubject_S1, txtRank_S1, txtGrade_S1, txtTotal_S1;
 
         public ViewHolder(@NonNull View itemView) {

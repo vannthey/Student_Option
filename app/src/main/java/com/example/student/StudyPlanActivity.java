@@ -9,15 +9,15 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.student.dashboard.dashboard_score.FreshmanFragment_score;
-import com.example.student.studyplan.FreshmanFragment_studyPlan;
+import com.example.student.dashboard.studyplan.FreshmanFragment_studyPlan;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class StudyPlanActivity extends AppCompatActivity {
 
@@ -26,26 +26,26 @@ public class StudyPlanActivity extends AppCompatActivity {
     TabAdapter tabAdapter;
 
 
-
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_studyplan);
-        Toolbar actionbar = findViewById(R.id.custom_toolbar_studyplan);
+        Toolbar actionbar = findViewById(R.id.custom_toolbar_studyPlan);
         actionbar.setTitle("Study Plan");
         setSupportActionBar(actionbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        TextView subject_tittle_studyplan = findViewById(R.id.subject_title_studyplan);
-        subject_tittle_studyplan.setText("IT");
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        TextView subject_tittle_studyPlan = findViewById(R.id.subject_title_studyPlan);
+        subject_tittle_studyPlan.setText("Information Technology");
 
         tabLayout = findViewById(R.id.tab_menu_studyPlan);
         viewPager = findViewById(R.id.view_pager_menu_studyPlan);
 
         tabAdapter = new TabAdapter(getSupportFragmentManager());
-        tabAdapter.setFragment(new FreshmanFragment_studyPlan(),"Freshman");
-        tabAdapter.setFragment(new FreshmanFragment_studyPlan(),"Sophomore");
-        tabAdapter.setFragment(new FreshmanFragment_studyPlan(),"Junior");
-        tabAdapter.setFragment(new FreshmanFragment_studyPlan(),"Senior");
+        tabAdapter.setFragment(new FreshmanFragment_studyPlan(), "Freshman");
+        tabAdapter.setFragment(new FreshmanFragment_studyPlan(), "Sophomore");
+        tabAdapter.setFragment(new FreshmanFragment_studyPlan(), "Junior");
+        tabAdapter.setFragment(new FreshmanFragment_studyPlan(), "Senior");
         //set Adapter
         viewPager.setAdapter(tabAdapter);
 
@@ -53,14 +53,16 @@ public class StudyPlanActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
     }
-    private class TabAdapter extends FragmentPagerAdapter {
+
+    static class TabAdapter extends FragmentPagerAdapter {
         ArrayList<Fragment> fragmentArrayList = new ArrayList<>();
         ArrayList<String> stringArrayList = new ArrayList<>();
 
-        public void setFragment(Fragment fragment, String menu){
+        public void setFragment(Fragment fragment, String menu) {
             fragmentArrayList.add(fragment);
             stringArrayList.add(menu);
         }
+
         public TabAdapter(@NonNull FragmentManager fm) {
             super(fm);
         }

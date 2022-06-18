@@ -5,12 +5,13 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".dashboard.dashboard_news.NewsFragment">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/semibold"
-        android:text="Inbox"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/inbox"
         android:textColor="@color/black"
         android:textSize="18sp" />
 
@@ -23,11 +24,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <androidx.recyclerview.widget.RecyclerView
+
+    <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view_news"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
     </LinearLayout>
 
 

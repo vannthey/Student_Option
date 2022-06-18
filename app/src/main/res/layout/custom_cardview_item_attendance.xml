@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
@@ -7,47 +8,55 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp">
+        android:layout_margin="5dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="10dp"
             android:gravity="center"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                tools:ignore="UselessParent">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
                     android:orientation="vertical">
+
                     <TextView
                         android:id="@+id/subject_attendance"
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/semibold"
-                        android:text="xxxxx xxxxxxx"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="@string/Sample_txt"
                         android:textColor="@color/black"
-                        android:textSize="12sp"/>
+                        android:textSize="12sp" />
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
+
                         <TextView
                             android:id="@+id/hour_attendance"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppinreg"
-                            android:text="XX"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/Sample_txt"
                             android:textSize="12sp" />
+
                         <TextView
                             android:id="@+id/textView2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppinreg"
-                            android:text=" hour"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/hour"
                             android:textAllCaps="true"
                             android:textSize="12sp" />
                     </LinearLayout>
@@ -58,21 +67,23 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="vertical">
+
                     <TextView
-                        android:id="@+id/permisson_attendance"
+                        android:id="@+id/permission_attendance"
                         android:layout_width="match_parent"
                         android:gravity="center"
                         android:layout_height="wrap_content"
-                        android:text="x"
-                        android:fontFamily="@font/semibold"
+                        android:text="@string/Sample_txt"
+                        android:fontFamily="@font/poppins_semi_bold"
                         android:textColor="@color/yellow"
                         android:textSize="12sp" />
+
                     <TextView
                         android:id="@+id/textView4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppinreg"
-                        android:text="permission"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/permission"
                         android:gravity="center"
                         android:textAllCaps="true"
                         android:textColor="@color/black"
@@ -84,21 +95,23 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="vertical">
+
                     <TextView
                         android:id="@+id/absent_attendance"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="x"
-                        android:fontFamily="@font/semibold"
+                        android:text="@string/Sample_txt"
+                        android:fontFamily="@font/poppins_semi_bold"
                         android:gravity="center"
                         android:textColor="@color/Red"
                         android:textSize="12sp" />
+
                     <TextView
                         android:id="@+id/textView3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppinreg"
-                        android:text="absent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/absent"
                         android:gravity="center"
                         android:textAllCaps="true"
                         android:textColor="@color/black"

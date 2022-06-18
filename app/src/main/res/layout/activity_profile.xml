@@ -6,9 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ProfileActivity">
-
-    //toolbar
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -16,85 +13,92 @@
             android:id="@+id/custom_toolbar_profile"
             layout="@layout/custom_toolbar_profile" />
     </RelativeLayout>
-    //profile n name
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profile_image"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:clickable="true"
-                android:src="@drawable/ic_launcher_background"
-                app:civ_border_color="@color/gray"
-                app:civ_border_width="1dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.092"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.461" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/change_image_in_profile"
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:src="@drawable/ic_camera"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/profile_image"
-                app:layout_constraintHorizontal_bias="0.828"
-                app:layout_constraintStart_toStartOf="@+id/profile_image"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.95" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_launcher_background"
+                    app:civ_border_color="@color/gray"
+                    app:civ_border_width="1dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.092"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.461" />
+
+                <ImageView
+                    android:id="@+id/change_image_in_profile"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_camera"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/profile_image"
+                    app:layout_constraintHorizontal_bias="0.95"
+                    app:layout_constraintStart_toStartOf="@+id/profile_image"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.95" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/student_name_profile"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/semibold"
-                android:text="Thorng Vanthey"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="@string/Sample_txt"
                 android:textColor="@color/black"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.2"
-                app:layout_constraintStart_toEndOf="@+id/profile_image"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.301" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/student_ID"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppinreg"
-                android:text="BSR130154"
-                android:textSize="14sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.14"
-                app:layout_constraintStart_toEndOf="@+id/profile_image"
-                app:layout_constraintTop_toBottomOf="@+id/student_name_profile"
-                app:layout_constraintVertical_bias="0.384" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/Sample_txt"
+                android:textSize="14sp" />
+        </LinearLayout>
     </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/gray" />
+        android:background="@color/gray"
+        android:alpha="0.5" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:orientation="horizontal">
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -107,24 +111,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:fontFamily="@font/poppinreg"
-                android:text="xxx"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/Sample_txt"
                 android:textAllCaps="true"
                 android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppinreg"
-                android:text="Major"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/Major"
                 android:textAllCaps="true"
                 android:textSize="12sp" />
         </LinearLayout>
 
         <View
             android:layout_width="1dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
             android:background="@color/gray" />
 
         <LinearLayout
@@ -139,16 +143,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:fontFamily="@font/poppinreg"
-                android:text="xxx"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/Sample_txt"
                 android:textAllCaps="true"
                 android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppinreg"
-                android:text="Promotion"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/Promotion"
                 android:textAllCaps="true"
                 android:textSize="12sp" />
 
@@ -156,8 +160,8 @@
 
         <View
             android:layout_width="1dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
             android:background="@color/gray" />
 
         <LinearLayout
@@ -172,16 +176,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:fontFamily="@font/poppinreg"
-                android:text="xxx"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/Sample_txt"
                 android:textAllCaps="true"
                 android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppinreg"
-                android:text="Academic year"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/Academic"
                 android:textAllCaps="true"
                 android:textSize="12sp" />
         </LinearLayout>
@@ -190,57 +194,77 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/gray"
-        android:layout_marginBottom="5dp"/>
+        android:alpha="0.5"
+        android:background="@color/gray" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="10dp"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp">
-        <TextView
+        android:orientation="vertical">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/semibold"
-            android:text="About Me"
-            android:textColor="@color/black"
-            android:textSize="14sp" />
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="@string/About_Me"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="8" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
 
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center"
+                android:layout_weight="1"
+                android:contentDescription="@null"
                 android:src="@drawable/ic_schedule_black_24" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingStart="20dp">
+                android:layout_weight="10"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppinreg"
-                    android:text="shift"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/shift"
                     android:textAllCaps="true"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/shift_in_profile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppinreg"
-                    android:text="xxx"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/Sample_txt"
                     android:textColor="@color/black"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -249,36 +273,39 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
 
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:layout_weight="1"
                 android:layout_gravity="center"
+                android:contentDescription="@null"
                 android:src="@drawable/ic_calendar_black_24" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingStart="20dp">
+                android:layout_weight="8"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppinreg"
-                    android:text="date of birth"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/date_of_birth"
                     android:textAllCaps="true"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/date_of_birth_profile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppinreg"
-                    android:text="xxx"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/Sample_txt"
                     android:textColor="@color/black"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -287,60 +314,67 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
 
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:layout_weight="1"
                 android:layout_gravity="center"
+                android:contentDescription="@null"
                 android:src="@drawable/ic_phone_black_24" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingStart="20dp">
+                android:layout_weight="8"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppinreg"
-                    android:text="Phone Number"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/Phone_Number"
                     android:textAllCaps="true"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/phone_number_profile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppinreg"
-                    android:text="xxx"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/Sample_txt"
                     android:textColor="@color/black"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
         </LinearLayout>
     </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="10dp"
+        android:alpha="0.5"
         android:background="@color/gray" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
         android:orientation="vertical"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp">
+        android:padding="10dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/semibold"
-            android:text="Change Password"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="@string/Change_Password"
             android:textColor="@color/black"
             android:textSize="14sp" />
 
@@ -349,18 +383,22 @@
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/custom_border"
-            android:hint="Enter your current password"
+            android:hint="@string/Enter_your_current_password"
             android:padding="10dp"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:autofillHints="Enter your current password"
+            android:inputType="numberPassword" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/custom_border"
-            android:hint="Enter new password"
+            android:hint="@string/Enter_new_password"
             android:padding="10dp"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:autofillHints="Enter new password"
+            android:inputType="numberPassword" />
 
         <Button
             android:id="@+id/change_password_btn_profile"
@@ -368,7 +406,7 @@
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/custom_btn_border"
-            android:text="Change Password"
+            android:text="@string/Change_Password"
             android:textSize="12sp" />
 
     </LinearLayout>
