@@ -63,4 +63,8 @@
     <string name="_15">15</string>
     <string name="subject">Subject</string>
     <string name="inbox">Inbox</string>
+    <string name="enter_your_student_id">Enter your student ID</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
 </resources>
