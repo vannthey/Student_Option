@@ -33,15 +33,10 @@ public class NewsFragment extends Fragment {
         models.add(new Model(1, new Assignment("Java Programing I", "20-June-2022", "Sa Sok Ngim")));
         models.add(new Model(2, new Homework("Java Programing II", "25-June-2022", "Sa Sok Ngim")));
         models.add(new Model(3, new Midterm("Data Structure", "25-June-2022", "6:00pm to 8:00pm", "Preah Khan")));
-
         models.add(new Model(1, new Assignment("Java Programing I", "20-June-2022", "Sa Sok Ngim")));
         models.add(new Model(2, new Homework("Java Programing II", "25-June-2022", "Sa Sok Ngim")));
         models.add(new Model(3, new Midterm("Data Structure", "25-June-2022", "6:00pm to 8:00pm", "Preah Khan")));
-
-        models.add(new Model(1, new Assignment("Java Programing I", "20-June-2022", "Sa Sok Ngim")));
-        models.add(new Model(2, new Homework("Java Programing II", "25-June-2022", "Sa Sok Ngim")));
-        models.add(new Model(3, new Midterm("Data Structure", "25-June-2022", "6:00pm to 8:00pm", "Preah Khan")));
-
+        recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(new NewsAdapter(models));
         return view;
