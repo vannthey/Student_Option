@@ -26,7 +26,6 @@ public class CategoryFragment extends Fragment {
     GridView gridView;
     String[] titles = {"Schedule", "Study Plan", "Attendance", "Feedback", "Score"};
     int[] images = {R.drawable.ic_schedule_24, R.drawable.ic_study_plan_24, R.drawable.ic_attendance_24, R.drawable.ic_feedback_24, R.drawable.ic_score_24};
-    int[] images_background = {R.drawable.usea, R.drawable.usea, R.drawable.usea, R.drawable.usea, R.drawable.usea};
     @SuppressLint("SetTextI18n")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -44,12 +43,10 @@ public class CategoryFragment extends Fragment {
         student_credit_dashboard.setText("500");
         student_name_dashboard.setText("Thorng Vanthey");
         de.hdodenhof.circleimageview.CircleImageView profile_dashboard = view.findViewById(R.id.profile_dashboard);
-        profile_dashboard.setOnClickListener(v -> {
-            startActivity(new Intent(getActivity(), ProfileActivity.class));
-        });
+        profile_dashboard.setOnClickListener(v -> startActivity(new Intent(getActivity(), ProfileActivity.class)));
         //profile picture
         gridView = view.findViewById(R.id.grid_view_dashboard);
-        gridView.setAdapter(new Adapter_category(this.getContext(), titles, images, images_background));
+        gridView.setAdapter(new Adapter_category(this.getContext(), titles, images));
         gridView.setOnItemClickListener((parent, view1, position, id) -> {
             Toast.makeText(getContext(), titles[position], Toast.LENGTH_SHORT).show();
             if (Objects.equals(titles[position], "Schedule")) {

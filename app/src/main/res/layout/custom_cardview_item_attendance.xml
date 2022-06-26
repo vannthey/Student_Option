@@ -32,12 +32,11 @@
 
                     <TextView
                         android:id="@+id/subject_attendance"
-                        android:layout_width="200dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_semi_bold"
+                        android:fontFamily="@font/roboto_medium"
                         android:text="@string/Sample_txt"
-                        android:textColor="@color/black"
-                        android:textSize="12sp" />
+                        android:textColor="@color/black" />
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -47,18 +46,16 @@
                             android:id="@+id/hour_attendance"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_regular"
-                            android:text="@string/Sample_txt"
-                            android:textSize="12sp" />
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="@string/Sample_txt" />
 
                         <TextView
                             android:id="@+id/textView2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_regular"
+                            android:fontFamily="@font/roboto_regular"
                             android:text="@string/hour"
-                            android:textAllCaps="true"
-                            android:textSize="12sp" />
+                            android:textAllCaps="true" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -74,20 +71,18 @@
                         android:gravity="center"
                         android:layout_height="wrap_content"
                         android:text="@string/Sample_txt"
-                        android:fontFamily="@font/poppins_semi_bold"
-                        android:textColor="@color/yellow"
-                        android:textSize="12sp" />
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/yellow" />
 
                     <TextView
                         android:id="@+id/textView4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
+                        android:fontFamily="@font/roboto_regular"
                         android:text="@string/permission"
                         android:gravity="center"
                         android:textAllCaps="true"
-                        android:textColor="@color/black"
-                        android:textSize="12sp" />
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -101,22 +96,19 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/Sample_txt"
-                        android:fontFamily="@font/poppins_semi_bold"
+                        android:fontFamily="@font/roboto_medium"
                         android:gravity="center"
-                        android:textColor="@color/Red"
-                        android:textSize="12sp" />
+                        android:textColor="@color/Red" />
 
                     <TextView
                         android:id="@+id/textView3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
+                        android:fontFamily="@font/roboto_regular"
                         android:text="@string/absent"
                         android:gravity="center"
                         android:textAllCaps="true"
-                        android:textColor="@color/black"
-                        android:textSize="12sp" />
-
+                        android:textColor="@color/black" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

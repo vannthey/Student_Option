@@ -20,20 +20,18 @@
             android:layout_marginBottom="20dp"
             android:contentDescription="@null"
             android:src="@drawable/usea"
-            android:visibility="gone"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_semi_bold"
+            android:fontFamily="@font/roboto_bold"
             android:gravity="center"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
             android:text="@string/university_name"
             android:textColor="@color/black"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -45,61 +43,57 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_regular"
+            android:fontFamily="@font/roboto_medium"
             android:text="@string/student_ID"
-            android:textColor="@color/black"
-            android:textSize="14sp" />
+            android:textColor="@color/black" />
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:autofillHints="Enter your student ID"
             android:background="@drawable/custom_border"
-            android:fontFamily="@font/poppins_regular"
+            android:fontFamily="@font/roboto_regular"
             android:hint="@string/enter_your_student_id"
             android:inputType="text"
-            android:padding="10dp"
-            android:textSize="12sp" />
+            android:padding="10dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/poppins_regular"
+            android:fontFamily="@font/roboto_medium"
             android:text="@string/password"
             android:textColor="@color/black" />
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:autofillHints="Enter your password"
             android:background="@drawable/custom_border"
-            android:fontFamily="@font/poppins_regular"
+            android:fontFamily="@font/roboto_regular"
             android:hint="@string/enter_your_password"
             android:inputType="text"
-            android:padding="10dp"
-            android:textSize="12sp" />
+            android:padding="10dp" />
 
         <TextView
             android:id="@+id/forgot_password_login"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:fontFamily="@font/poppins_regular"
-            android:text="@string/forgot_password"
-            android:textSize="14sp" />
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/forgot_password" />
 
         <Button
+            android:layout_marginTop="50dp"
             android:id="@+id/student_btn_login"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
             android:background="@drawable/custom_btn_border"
             android:text="@string/login"
-            android:textAllCaps="false"
-            android:textSize="12sp" />
+            android:textAllCaps="false" />
     </LinearLayout>
 
 </LinearLayout>

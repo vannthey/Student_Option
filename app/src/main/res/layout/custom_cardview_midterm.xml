@@ -26,20 +26,19 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/custom_border"
                     android:backgroundTint="@color/light_pink"
-                    android:fontFamily="@font/poppins_regular"
+                    android:fontFamily="@font/roboto_regular"
                     android:gravity="center"
                     android:text="@string/Midterm"
-                    android:textColor="@color/black"
-                    android:textSize="12sp" />
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/subject_midterm_news"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_semi_bold"
+                    android:fontFamily="@font/roboto_medium"
                     android:text="@string/Subject"
                     android:textColor="@color/black"
-                    android:textSize="14sp" />
+                    android:textSize="16sp" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -49,17 +48,15 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="@string/Exam_date"
-                        android:textSize="12sp" />
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/Exam_date" />
 
                     <TextView
                         android:id="@+id/date_midterm_news"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="@string/Sample_txt"
-                        android:textSize="12sp" />
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/Sample_txt" />
 
                 </LinearLayout>
 
@@ -71,17 +68,15 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="@string/Time"
-                        android:textSize="12sp" />
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/Time" />
 
                     <TextView
                         android:id="@+id/time_midterm_news"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="@string/Sample_txt"
-                        android:textSize="12sp" />
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/Sample_txt" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -92,17 +87,15 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="@string/Room"
-                        android:textSize="12sp" />
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/Room" />
 
                     <TextView
                         android:id="@+id/room_midterm_news"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="@string/Sample_txt"
-                        android:textSize="12sp" />
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/Sample_txt" />
 
                 </LinearLayout>
             </LinearLayout>

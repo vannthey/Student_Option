@@ -26,20 +26,19 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/custom_border"
                     android:backgroundTint="@color/blue_light"
-                    android:fontFamily="@font/poppins_regular"
+                    android:fontFamily="@font/roboto_regular"
                     android:gravity="center"
                     android:text="@string/Assignment"
-                    android:textColor="@color/black"
-                    android:textSize="12sp" />
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/subject_assignment_news"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_semi_bold"
+                    android:fontFamily="@font/roboto_medium"
                     android:text="@string/Subject"
                     android:textColor="@color/black"
-                    android:textSize="14sp" />
+                    android:textSize="16sp" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -49,17 +48,15 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="@string/Due_Date"
-                        android:textSize="12sp" />
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/Due_Date" />
 
                     <TextView
                         android:id="@+id/due_date_assignment_news"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="@string/Sample_txt"
-                        android:textSize="12sp" />
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/Sample_txt" />
 
                 </LinearLayout>
 
@@ -71,17 +68,15 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="@string/Create_By"
-                        android:textSize="12sp" />
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/Create_By" />
 
                     <TextView
                         android:id="@+id/create_by_assignment_news"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
-                        android:text="@string/Sample_txt"
-                        android:textSize="12sp" />
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/Sample_txt" />
                 </LinearLayout>
             </LinearLayout>
 

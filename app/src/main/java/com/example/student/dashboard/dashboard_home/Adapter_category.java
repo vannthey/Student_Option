@@ -16,14 +16,12 @@ public class Adapter_category extends BaseAdapter {
     Context context;
     String[] titles;
     int[] images;
-    int[] images_background;
     LayoutInflater inflater;
 
-    public Adapter_category(Context context, String[] titles, int[] images, int[] images_background) {
+    public Adapter_category(Context context, String[] titles, int[] images) {
         this.context = context;
         this.titles = titles;
         this.images = images;
-        this.images_background = images_background;
     }
 
     @Override
@@ -52,11 +50,9 @@ public class Adapter_category extends BaseAdapter {
         }
         ImageView icon_category = convertView.findViewById(R.id.item_images);
         TextView textView = convertView.findViewById(R.id.item_titles);
-        ImageView background = convertView.findViewById(R.id.item_images_background);
 
         icon_category.setImageResource(images[position]);
         textView.setText(titles[position]);
-        background.setImageResource(images_background[position]);
         return convertView;
     }
 }

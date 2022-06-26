@@ -28,11 +28,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/poppins_semi_bold"
+                    android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="@string/semester_1"
-                    android:textColor="@color/black"
-                    android:textSize="12sp" />
+                    android:textColor="@color/black" />
 
                 <Space
                     android:layout_width="wrap_content"
@@ -42,39 +41,35 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/poppins_semi_bold"
+                    android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="@string/_270"
-                    android:textColor="@color/black"
-                    android:textSize="12sp" />
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/poppins_semi_bold"
+                    android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="@string/hour"
-                    android:textAllCaps="true"
-                    android:textSize="12sp" />
+                    android:textAllCaps="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/poppins_semi_bold"
+                    android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="@string/_15"
-                    android:textColor="@color/black"
-                    android:textSize="12sp" />
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="10dp"
-                    android:fontFamily="@font/poppins_semi_bold"
+                    android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="@string/credit"
-                    android:textAllCaps="true"
-                    android:textSize="12sp" />
+                    android:textAllCaps="true" />
 
             </LinearLayout>
 
@@ -87,11 +82,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/poppins_semi_bold"
+                    android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="@string/subject"
-                    android:textColor="@color/black"
-                    android:textSize="12sp" />
+                    android:textColor="@color/black" />
 
                 <Space
                     android:layout_width="wrap_content"
@@ -108,11 +102,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/poppins_semi_bold"
+                    android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="@string/credit"
-                    android:textColor="@color/black"
-                    android:textSize="12sp" />
+                    android:textColor="@color/black" />
             </LinearLayout>
 
             <View
@@ -141,11 +134,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/poppins_semi_bold"
+                    android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="@string/semester_2"
-                    android:textColor="@color/black"
-                    android:textSize="12sp" />
+                    android:textColor="@color/black" />
 
                 <Space
                     android:layout_width="wrap_content"
@@ -155,39 +147,35 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/poppins_semi_bold"
+                    android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="@string/_270"
-                    android:textColor="@color/black"
-                    android:textSize="12sp" />
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/poppins_semi_bold"
+                    android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="@string/hour"
-                    android:textAllCaps="true"
-                    android:textSize="12sp" />
+                    android:textAllCaps="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/poppins_semi_bold"
+                    android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="@string/_15"
-                    android:textColor="@color/black"
-                    android:textSize="12sp" />
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="10dp"
-                    android:fontFamily="@font/poppins_semi_bold"
+                    android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="@string/credit"
-                    android:textAllCaps="true"
-                    android:textSize="12sp" />
+                    android:textAllCaps="true" />
 
             </LinearLayout>
 
@@ -200,11 +188,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/poppins_semi_bold"
+                    android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="@string/subject"
-                    android:textColor="@color/black"
-                    android:textSize="12sp" />
+                    android:textColor="@color/black" />
 
                 <Space
                     android:layout_width="wrap_content"
@@ -221,11 +208,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/poppins_semi_bold"
+                    android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="@string/credit"
-                    android:textColor="@color/black"
-                    android:textSize="12sp" />
+                    android:textColor="@color/black" />
             </LinearLayout>
 
             <View

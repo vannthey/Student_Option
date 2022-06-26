@@ -14,13 +14,6 @@
             android:id="@+id/custom_toolbar_score"
             layout="@layout/custom_toolbar" />
     </RelativeLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:alpha="0.5"
-        android:background="@color/gray" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,26 +29,26 @@
                 android:id="@+id/subject_title_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_semi_bold"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="16sp"
                 android:text="@string/Sample_txt"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
+                android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_semi_bold"
+                android:fontFamily="@font/roboto_medium"
                 android:text="@string/dash"
                 android:textColor="@color/black"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_semi_bold"
+                android:fontFamily="@font/roboto_medium"
                 android:text="@string/Score"
                 android:textColor="@color/black"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
 
         </LinearLayout>
 
@@ -63,7 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Follow_up_with_your_score"
-            android:textSize="12sp" />
+            android:fontFamily="@font/roboto_regular" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"

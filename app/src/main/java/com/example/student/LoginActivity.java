@@ -2,7 +2,6 @@ package com.example.student;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.widget.Button;
@@ -20,7 +19,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         //underline forgot password text
         TextView forgot_password_login = findViewById(R.id.forgot_password_login);
-        forgot_password_login.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG);
+//        forgot_password_login.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG);
 
         Button student_btn_login = findViewById(R.id.student_btn_login);
 

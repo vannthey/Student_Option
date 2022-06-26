@@ -62,8 +62,8 @@ public class ProfileActivity extends AppCompatActivity {
         phone_number_profile.setText("093794815");
 
         //change password btn
-        Button change_password_btn_profile = findViewById(R.id.change_password_btn_profile);
-        change_password_btn_profile.setOnClickListener(v -> Toast.makeText(ProfileActivity.this, "Sent", Toast.LENGTH_SHORT).show());
+//        Button change_password_btn_profile = findViewById(R.id.change_password_btn_profile);
+//        change_password_btn_profile.setOnClickListener(v -> Toast.makeText(ProfileActivity.this, "Sent", Toast.LENGTH_SHORT).show());
 
         change_image_in_profile.setOnClickListener(v -> ImagePicker.Companion.with(ProfileActivity.this)
                 .maxResultSize(1080, 1080)

@@ -22,10 +22,10 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="10dp"
-                android:fontFamily="@font/poppins_regular"
+                android:fontFamily="@font/roboto_regular"
                 android:text="@string/semester_1"
                 android:textAllCaps="true"
-                android:textSize="12sp" />
+                android:textSize="16sp" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view_s1_score"
@@ -38,10 +38,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
-                android:fontFamily="@font/poppins_regular"
+                android:fontFamily="@font/roboto_regular"
                 android:gravity="end"
-                android:text="@string/view_detail"
-                android:textSize="12sp" />
+                android:text="@string/view_detail" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -49,11 +48,11 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="10dp"
-                android:fontFamily="@font/poppins_regular"
+                android:fontFamily="@font/roboto_regular"
                 android:gravity="center"
                 android:text="@string/semester_2"
                 android:textAllCaps="true"
-                android:textSize="12sp" />
+                android:textSize="16sp" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view_s2_score"
@@ -66,10 +65,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
-                android:fontFamily="@font/poppins_regular"
+                android:fontFamily="@font/roboto_regular"
                 android:gravity="end"
-                android:text="@string/view_detail"
-                android:textSize="12sp" />
+                android:text="@string/view_detail" />
         </LinearLayout>
     </ScrollView>
 
