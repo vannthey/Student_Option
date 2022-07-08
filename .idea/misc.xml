@@ -9,11 +9,15 @@
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/custom_border.xml" value="0.148" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/custom_btn_border.xml" value="0.148" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/custom_cardview_border.xml" value="0.387" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/custom_label_border.xml" value="0.2355" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/custom_line_text.xml" value="0.184" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/custom_line_view.xml" value="0.2355" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/custom_rectangle_border.xml" value="0.1445" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/custom_regtangle_border.xml" value="0.1445" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/custom_round_border.xml" value="0.2025" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/custom_view_border.xml" value="0.19" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/edit_text_border.xml" value="0.2355" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/edite_text_border.xml" value="0.1505" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/ic_add_task_24.xml" value="0.232" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/ic_back_24.xml" value="0.1385" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/ic_calendar_black_24.xml" value="0.19" />
@@ -24,13 +28,14 @@
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/ic_schedule_black_24.xml" value="0.19" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/ic_score_24.xml" value="0.232" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/tab_indecator.xml" value="0.16" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/drawable/tab_indicator.xml" value="0.2355" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout-xxxhdpi/activity_login.xml" value="0.23157894736842105" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_attendance.xml" value="0.33" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_detail_score.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_feedback.xml" value="0.25" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_forgotpassword.xml" value="0.371875" />
-        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_news.xml" value="0.33" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/activity_profile.xml" value="0.22" />
@@ -43,7 +48,8 @@
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_cardview_homework.xml" value="0.25" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_cardview_item_attendance.xml" value="0.25" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_cardview_item_score.xml" value="0.33" />
-        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_cardview_midterm.xml" value="0.16" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_cardview_midterm.xml" value="0.25" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_cardview_rank_credit.xml" value="0.33" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_cardview_score_s1.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_cardview_score_semester.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_dialog_forgotpassword.xml" value="0.21" />
@@ -57,7 +63,7 @@
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_toolbar.xml" value="0.33" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_toolbar_action.xml" value="0.209375" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/custom_toolbar_profile.xml" value="0.2" />
-        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/fragment_category.xml" value="0.16" />
+        <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/fragment_category.xml" value="0.33" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/fragment_freshman.xml" value="0.33" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/fragment_freshman_score.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Vann/Documents/YEAR4/student/app/src/main/res/layout/fragment_freshman_studyplan.xml" value="0.22447916666666667" />

@@ -6,12 +6,15 @@
     android:orientation="vertical"
     tools:context=".dashboard.dashboard_news.NewsFragment">
 
+    <include
+        layout="@layout/custom_toolbar"
+        android:id="@+id/custom_toolbar_news" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:ignore="UselessParent">
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view_news"

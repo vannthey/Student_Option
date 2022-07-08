@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".FeedbackActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <include
+        android:id="@+id/custom_toolbar_feedback"
+        layout="@layout/custom_toolbar" />
 
-        <include
-            android:id="@+id/custom_toolbar_feedback"
-            layout="@layout/custom_toolbar" />
-    </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_medium"
+            android:fontFamily="@font/roboto_regular"
             android:text="@string/How_would_you_rate_your_experience_using_this_app"
             android:textColor="@color/black" />
 
         <RatingBar
+            android:layout_marginTop="10dp"
             android:id="@+id/rating_star"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,21 +36,22 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_medium"
+            android:fontFamily="@font/roboto_regular"
             android:text="@string/Help_us_by_describing_your_problem"
+            android:layout_marginTop="10dp"
             android:textColor="@color/black" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/custom_border"
-            android:gravity="start"
+            android:background="@drawable/custom_label_border"
             android:fontFamily="@font/roboto_regular"
+            android:gravity="start"
+            android:textSize="14sp"
             android:hint="@string/Write_your_problem_here"
-            android:padding="10dp"
-            android:autofillHints="Write your problem here."
-            android:inputType="text" />
+            android:inputType="text"
+            android:padding="10dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -61,7 +62,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto_medium"
+                android:fontFamily="@font/roboto_regular"
                 android:text="@string/Do_you_have_any_screenshot"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
@@ -69,7 +70,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto_medium"
+                android:fontFamily="@font/roboto_regular"
                 android:text="@string/Optional"
                 android:textSize="14sp" />
         </LinearLayout>
@@ -77,10 +78,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:background="@drawable/custom_border"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_label_border"
             android:gravity="center"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="20dp"
@@ -98,15 +99,14 @@
                 android:textSize="14sp" />
         </LinearLayout>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/submit_btn_feedback"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_marginTop="50dp"
-            android:background="@drawable/custom_btn_border"
-            android:fontFamily="@font/roboto_medium"
             android:text="@string/Submit_Feedback"
-            android:textAllCaps="false" />
+            app:backgroundTint="@color/Dark_Blue"
+            app:cornerRadius="50dp"
+            android:textAllCaps="true" />
     </LinearLayout>
-
 </LinearLayout>

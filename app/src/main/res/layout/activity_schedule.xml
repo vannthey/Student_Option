@@ -6,13 +6,8 @@
     android:orientation="vertical"
     tools:context=".ScheduleActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:ignore="UselessParent">
         <include
             android:id="@+id/custom_toolbar_schedule"
             layout="@layout/custom_toolbar" />
-    </RelativeLayout>
 
 </LinearLayout>

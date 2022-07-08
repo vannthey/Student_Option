@@ -53,7 +53,7 @@
     <string name="_1">1</string>
     <string name="_3">3</string>
     <string name="credit">Credit</string>
-    <string name="hello">Hello!</string>
+    <string name="hello">Hello</string>
     <string name="student_rank">Student Rank</string>
     <string name="total_credit">Total credit</string>
     <string name="semester_1">semester 1</string>
@@ -67,4 +67,5 @@
     <string name="enter_your_password">Enter your password</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="login">Login</string>
+    <string name="NA">N/A</string>
 </resources>
