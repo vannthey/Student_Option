@@ -7,10 +7,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -61,8 +59,6 @@ public class ProfileActivity extends AppCompatActivity {
         phone_number_profile.setText("093794815");
 
         //change password btn
-//        Button change_password_btn_profile = findViewById(R.id.change_password_btn_profile);
-//        change_password_btn_profile.setOnClickListener(v -> Toast.makeText(ProfileActivity.this, "Sent", Toast.LENGTH_SHORT).show());
 
         change_image_in_profile.setOnClickListener(v -> ImagePicker.Companion.with(ProfileActivity.this)
                 .maxResultSize(1080, 1080)
@@ -82,8 +78,7 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.sign_out_in_menu) {
-            Intent intent = new Intent(ProfileActivity.this, LoginActivity.class);
-            startActivity(intent);
+            startActivity(new Intent(ProfileActivity.this, LoginActivity.class));
             return true;
         } else if (item.getItemId() == R.id.change_profile_in_menu) {
             ImagePicker.Companion.with(ProfileActivity.this)

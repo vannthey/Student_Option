@@ -29,19 +29,19 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto_bold"
+                android:fontFamily="@font/roboto_medium"
                 android:text="@string/hello"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
 
             <TextView
                 android:id="@+id/student_name_dashboard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto_bold"
+                android:fontFamily="@font/roboto_medium"
                 android:text="@string/Sample_txt"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
         </LinearLayout>
 
         <LinearLayout
@@ -54,9 +54,8 @@
                 android:id="@+id/profile_dashboard"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/ic_launcher_background"
-                app:civ_border_color="@color/gray"
-                app:civ_border_width="1dp" />
+                android:src="@drawable/sample_user"
+                app:civ_border_color="@color/gray" />
         </LinearLayout>
     </LinearLayout>
 

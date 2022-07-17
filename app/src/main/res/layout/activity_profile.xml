@@ -6,24 +6,25 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ProfileActivity">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+
         <include
             android:id="@+id/custom_toolbar_profile"
             layout="@layout/custom_toolbar_profile" />
-    </RelativeLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
+        android:baselineAligned="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:gravity="center">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
@@ -33,9 +34,8 @@
                     android:id="@+id/profile_image"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/ic_launcher_background"
+                    android:src="@drawable/sample_user"
                     app:civ_border_color="@color/gray"
-                    app:civ_border_width="1dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.092"
@@ -71,50 +71,51 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_medium"
                 android:text="@string/Sample_txt"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
 
             <TextView
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
                 android:id="@+id/student_ID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
-                android:text="@string/Sample_txt"
-                android:textSize="14sp" />
+                android:text="@string/Sample_txt" />
         </LinearLayout>
     </LinearLayout>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:alpha="0.5"
+        android:layout_marginTop="10dp"
         android:background="@color/gray" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center"
+            android:padding="5dp"
             android:orientation="vertical">
 
             <TextView
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
                 android:id="@+id/major_in_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_medium"
-                android:text="@string/Sample_txt"
+                android:text="@string/NA"
                 android:textAllCaps="true"
                 android:textColor="@color/black" />
 
             <TextView
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:id="@+id/major_in_profile_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
@@ -125,6 +126,7 @@
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
+            android:alpha="0.5"
             android:background="@color/gray" />
 
         <LinearLayout
@@ -135,15 +137,18 @@
             android:orientation="vertical">
 
             <TextView
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
                 android:id="@+id/promotion_in_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_medium"
-                android:text="@string/Sample_txt"
+                android:text="@string/NA"
                 android:textAllCaps="true"
                 android:textColor="@color/black" />
 
             <TextView
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:id="@+id/promotion_in_profile_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
@@ -156,6 +161,7 @@
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
+            android:alpha="0.5"
             android:background="@color/gray" />
 
         <LinearLayout
@@ -166,15 +172,18 @@
             android:orientation="vertical">
 
             <TextView
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
                 android:id="@+id/academic_year_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_medium"
-                android:textColor="@color/black"
-                android:text="@string/Sample_txt"
-                android:textAllCaps="true" />
+                android:text="@string/NA"
+                android:textAllCaps="true"
+                android:textColor="@color/black" />
 
             <TextView
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:id="@+id/academic_year_profile_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
@@ -186,44 +195,45 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:alpha="0.5"
         android:background="@color/gray" />
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
                 android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
                 android:text="@string/About_Me"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
                 android:textColor="@color/black" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="8" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal"
-            android:layout_margin="5dp">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:contentDescription="@null"
@@ -236,6 +246,8 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                    android:id="@+id/shift_in_profile_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_regular"
@@ -243,11 +255,12 @@
                     android:textAllCaps="true" />
 
                 <TextView
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
                     android:id="@+id/shift_in_profile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_medium"
-                    android:text="@string/Sample_txt"
+                    android:text="@string/NA"
                     android:textColor="@color/black" />
 
             </LinearLayout>
@@ -256,15 +269,17 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal"
-            android:layout_margin="5dp">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_weight="1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:layout_gravity="center"
+                android:layout_weight="1"
                 android:contentDescription="@null"
                 android:src="@drawable/ic_calendar_black_24" />
 
@@ -275,6 +290,8 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                    android:id="@+id/date_of_birth_profile_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_regular"
@@ -282,12 +299,12 @@
                     android:textAllCaps="true" />
 
                 <TextView
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
                     android:id="@+id/date_of_birth_profile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_medium"
-                    android:text="@string/Sample_txt"
-                    android:textColor="@color/black" />
+                    android:text="@string/NA" />
 
             </LinearLayout>
 
@@ -295,15 +312,17 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal"
-            android:layout_margin="5dp">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_weight="1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:layout_gravity="center"
+                android:layout_weight="1"
                 android:contentDescription="@null"
                 android:src="@drawable/ic_phone_black_24" />
 
@@ -314,6 +333,8 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                    android:id="@+id/phone_number_profile_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_regular"
@@ -321,69 +342,15 @@
                     android:textAllCaps="true" />
 
                 <TextView
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
                     android:id="@+id/phone_number_profile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_medium"
-                    android:text="@string/Sample_txt"
-                    android:textColor="@color/black" />
+                    android:text="@string/NA" />
 
             </LinearLayout>
 
         </LinearLayout>
     </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/gray" />
-
-
-    <!--    <LinearLayout-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="match_parent"-->
-    <!--        android:orientation="vertical"-->
-    <!--        android:padding="10dp">-->
-
-    <!--        <TextView-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:fontFamily="@font/poppins_semi_bold"-->
-    <!--            android:text="@string/Change_Password"-->
-    <!--            android:textColor="@color/black"-->
-    <!--            android:textSize="14sp" />-->
-
-    <!--        <EditText-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="40dp"-->
-    <!--            android:layout_marginTop="10dp"-->
-    <!--            android:background="@drawable/custom_border"-->
-    <!--            android:hint="@string/Enter_your_current_password"-->
-    <!--            android:padding="10dp"-->
-    <!--            android:textSize="12sp"-->
-    <!--            android:autofillHints="Enter your current password"-->
-    <!--            android:inputType="numberPassword" />-->
-
-    <!--        <EditText-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="40dp"-->
-    <!--            android:layout_marginTop="10dp"-->
-    <!--            android:background="@drawable/custom_border"-->
-    <!--            android:hint="@string/Enter_new_password"-->
-    <!--            android:padding="10dp"-->
-    <!--            android:textSize="12sp"-->
-    <!--            android:autofillHints="Enter new password"-->
-    <!--            android:inputType="numberPassword" />-->
-
-    <!--        <Button-->
-    <!--            android:id="@+id/change_password_btn_profile"-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="40dp"-->
-    <!--            android:layout_marginTop="20dp"-->
-    <!--            android:background="@drawable/custom_btn_border"-->
-    <!--            android:text="@string/Change_Password"-->
-    <!--            android:textSize="12sp" />-->
-
-    <!--    </LinearLayout>-->
-
 </LinearLayout>

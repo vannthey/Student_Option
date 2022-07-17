@@ -32,11 +32,11 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_bold"
             android:gravity="center"
-            android:paddingStart="30dp"
-            android:paddingEnd="30dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
             android:text="@string/university_name"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
     </LinearLayout>
 
     <LinearLayout
@@ -116,7 +116,7 @@
             android:layout_marginTop="20dp"
             app:backgroundTint="@color/Dark_Blue"
             android:text="@string/login"
-            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
             app:cornerRadius="50dp" />
 
     </LinearLayout>

@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_regular"
             android:text="@string/How_would_you_rate_your_experience_using_this_app"
-            android:textColor="@color/black" />
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
 
         <RatingBar
             android:layout_marginTop="10dp"
@@ -39,7 +39,7 @@
             android:fontFamily="@font/roboto_regular"
             android:text="@string/Help_us_by_describing_your_problem"
             android:layout_marginTop="10dp"
-            android:textColor="@color/black" />
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
 
         <EditText
             android:layout_width="match_parent"
@@ -64,15 +64,14 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
                 android:text="@string/Do_you_have_any_screenshot"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
                 android:text="@string/Optional"
-                android:textSize="14sp" />
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
         </LinearLayout>
 
         <LinearLayout
@@ -106,7 +105,7 @@
             android:layout_marginTop="50dp"
             android:text="@string/Submit_Feedback"
             app:backgroundTint="@color/Dark_Blue"
-            app:cornerRadius="50dp"
-            android:textAllCaps="true" />
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+            app:cornerRadius="50dp" />
     </LinearLayout>
 </LinearLayout>

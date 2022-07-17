@@ -1,7 +1,9 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.Student" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.Student" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Primary brand color. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
@@ -16,14 +18,18 @@
 
     //set icon close in profile page
 
-    <style name="setDisplayHomeAsUpEnable_profile" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="setDisplayHomeAsUpEnable_profile" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
         <item name="windowActionBarOverlay">true</item>
         <item name="homeAsUpIndicator">@drawable/ic_close_24</item>
     </style>
 
     //set icon back on action bar
 
-    <style name="setDisplayHomeAsUpEnable" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="setDisplayHomeAsUpEnable" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
         <item name="windowActionBarOverlay">true</item>
         <item name="homeAsUpIndicator">@drawable/ic_back_24</item>
     </style>
